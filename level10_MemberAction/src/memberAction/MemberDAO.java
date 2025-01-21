@@ -47,6 +47,10 @@ public class MemberDAO {
 		mList.add(new Member(id, pw, name));
 	}
 	
+	public void deleteMember(int idx) {
+		mList.remove(idx);
+	}
+	
 	public void setMember(int idx, String id, String pw, String newName) {
 		mList.set(idx, new Member(id, pw, newName));
 	}
